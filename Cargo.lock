@@ -1282,7 +1282,7 @@ dependencies = [
 [[package]]
 name = "progenitor"
 version = "0.14.0"
-source = "git+https://github.com/oxidecomputer/progenitor#d58416b94226cbd44282fae83fd7361f0e6e0a70"
+source = "git+https://github.com/oxidecomputer/progenitor#bc1602b4ca413c342ac2b8fdbc33bc19eba4d053"
 dependencies = [
  "progenitor-client",
  "progenitor-impl",
@@ -1292,7 +1292,7 @@ dependencies = [
 [[package]]
 name = "progenitor-client"
 version = "0.14.0"
-source = "git+https://github.com/oxidecomputer/progenitor#d58416b94226cbd44282fae83fd7361f0e6e0a70"
+source = "git+https://github.com/oxidecomputer/progenitor#bc1602b4ca413c342ac2b8fdbc33bc19eba4d053"
 dependencies = [
  "bytes",
  "futures-core",
@@ -1306,7 +1306,7 @@ dependencies = [
 [[package]]
 name = "progenitor-impl"
 version = "0.14.0"
-source = "git+https://github.com/oxidecomputer/progenitor#d58416b94226cbd44282fae83fd7361f0e6e0a70"
+source = "git+https://github.com/oxidecomputer/progenitor#bc1602b4ca413c342ac2b8fdbc33bc19eba4d053"
 dependencies = [
  "heck",
  "http",
@@ -1327,7 +1327,7 @@ dependencies = [
 [[package]]
 name = "progenitor-macro"
 version = "0.14.0"
-source = "git+https://github.com/oxidecomputer/progenitor#d58416b94226cbd44282fae83fd7361f0e6e0a70"
+source = "git+https://github.com/oxidecomputer/progenitor#bc1602b4ca413c342ac2b8fdbc33bc19eba4d053"
 dependencies = [
  "openapiv3",
  "proc-macro2",
@@ -1751,12 +1751,10 @@ version = "0.8.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3fbf2ae1b8bc8e02df939598064d22402220cd5bbcca1c76f7d6a310974d5615"
 dependencies = [
- "chrono",
  "dyn-clone",
  "schemars_derive",
  "serde",
  "serde_json",
- "uuid",
 ]
 
 [[package]]
