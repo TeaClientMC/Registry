@@ -644,9 +644,9 @@ checksum = "2304e00983f87ffb38b55b444b5e3b60a884b5d30c0fca7d82fe33449bbe55ea"
 
 [[package]]
 name = "http"
-version = "1.4.0"
+version = "1.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e3ba2a386d7f85a81f119ad7498ebe444d2e22c2af0b86b069416ace48b3311a"
+checksum = "8be7462df143984c4598a256ef469b251d7d7f9e271135073e78fc535414f3d0"
 dependencies = [
  "bytes",
  "itoa",
@@ -1282,7 +1282,7 @@ dependencies = [
 [[package]]
 name = "progenitor"
 version = "0.14.0"
-source = "git+https://github.com/oxidecomputer/progenitor#3b8b6a77432b105939cdb8aa56796ef33cbf0bfc"
+source = "git+https://github.com/oxidecomputer/progenitor#0f03b096adf018666eacaa612cf4a2ffb46a9186"
 dependencies = [
  "progenitor-client",
  "progenitor-impl",
@@ -1292,7 +1292,7 @@ dependencies = [
 [[package]]
 name = "progenitor-client"
 version = "0.14.0"
-source = "git+https://github.com/oxidecomputer/progenitor#3b8b6a77432b105939cdb8aa56796ef33cbf0bfc"
+source = "git+https://github.com/oxidecomputer/progenitor#0f03b096adf018666eacaa612cf4a2ffb46a9186"
 dependencies = [
  "bytes",
  "futures-core",
@@ -1306,7 +1306,7 @@ dependencies = [
 [[package]]
 name = "progenitor-impl"
 version = "0.14.0"
-source = "git+https://github.com/oxidecomputer/progenitor#3b8b6a77432b105939cdb8aa56796ef33cbf0bfc"
+source = "git+https://github.com/oxidecomputer/progenitor#0f03b096adf018666eacaa612cf4a2ffb46a9186"
 dependencies = [
  "heck",
  "http",
@@ -1327,7 +1327,7 @@ dependencies = [
 [[package]]
 name = "progenitor-macro"
 version = "0.14.0"
-source = "git+https://github.com/oxidecomputer/progenitor#3b8b6a77432b105939cdb8aa56796ef33cbf0bfc"
+source = "git+https://github.com/oxidecomputer/progenitor#0f03b096adf018666eacaa612cf4a2ffb46a9186"
 dependencies = [
  "openapiv3",
  "proc-macro2",
@@ -2404,9 +2404,9 @@ checksum = "06abde3611657adf66d383f00b093d7faecc7fa57071cce2578660c9f1010821"
 
 [[package]]
 name = "uuid"
-version = "1.23.1"
+version = "1.23.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ddd74a9687298c6858e9b88ec8935ec45d22e8fd5e6394fa1bd4e99a87789c76"
+checksum = "d258b83ceec21034727ecee8c382cfa6c3e133699b0742c64571814fb420c9f7"
 dependencies = [
  "getrandom 0.4.2",
  "js-sys",
