@@ -1,4 +1,4 @@
-# registry
+# Registry
 A Public Registry of Mods/Texturepacks/Profiles that are not avalible on modrinth/curseforge and servers to list from for TeaClient
 
 # Channels
@@ -56,7 +56,11 @@ gitGraph
 3. Wait patiently for a TeaClient Maintainer to repond to your PR this could take up to 7-14 business days. When it the ready to go they will approve it and merge.
 4. Wait for your changes to go live in the next version. which is the next version of CLI.
 
+# FAQ
 
+* Why use *language and why not Just use Lunar Client Registry instead of importing?
+    * a. Rust is the future language for building CLI's especially the usage with llms & Toml for maintainability/readability reasons.
+    * b. We are own Client and have no officalation to Lunar Client so that's why we built our own.
 
 # Credits
 
