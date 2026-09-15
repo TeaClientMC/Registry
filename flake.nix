@@ -34,6 +34,8 @@
             ];
           };
 
+          packages.registry-cli = pkgs.callPackage ./package.nix { };
+
           devShells.default =
             with pkgs;
             let
