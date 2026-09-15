@@ -2,6 +2,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    cargo-dyndrv = {
+      url = "github:obsidiansystems/cargo-dyndrv";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -31,8 +35,11 @@
             inherit system;
             overlays = [
               (import inputs.rust-overlay)
+              inputs.cargo-dyndrv.overlays.default
             ];
           };
+
+          packages.registry-cli = pkgs.callPackage ./package.nix { };
 
           devShells.default =
             with pkgs;
