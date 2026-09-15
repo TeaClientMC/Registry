@@ -16,13 +16,9 @@ use std::{fs::File, io::Write, str::FromStr, sync::LazyLock};
 use chrono::Datelike;
 use clap::Parser;
 use cmd::{CLI, SubCommands};
-//use generatedschemas::{ModLoaders, RegistryInfo, RegistryItem, Versioning};
-//use inquire::{Confirm, MultiSelect, Select, Text, required};
 use reqwest::{Client, ClientBuilder};
-//use utils::{collect_socials, image, repo};
 
 mod cmd;
-mod prompts;
 //mod schemas;
 //mod utils;
 
@@ -30,29 +26,28 @@ static API_URL: LazyLock<String> = LazyLock::new(|| {
     std::env::var("API_URL").unwrap_or_else(|_| "https://api.teaclient.net".to_string())
 });
 
+const GPL_NOTICE: &str = concat!(
+    "    TeaClient  Copyright (C) ",
+    env!("CURRENT_YEAR"),
+    "  TeaClientMC\n",
+    "    This program comes with ABSOLUTELY NO WARRANTY; for details type 'license'.\n",
+    "    This is free software, and you are welcome to redistribute it\n",
+    "    under certain conditions; type 'license' for details."
+);
+
 #[tokio::main]
 async fn main() {
     let cli = CLI::parse();
-    let current_year = chrono::Local::now().year();
     let client = ClientBuilder::new().build().unwrap();
 
-    println!("    TeaClient  Copyright (C) {}  TeaClientMC", current_year);
-    println!("    This program comes with ABSOLUTELY NO WARRANTY; for details type 'license'.");
-    println!("    This is free software, and you are welcome to redistribute it");
-    println!("    under certain conditions; type 'license' for details.");
+    println!("{}", GPL_NOTICE);
 
     match cli.command {
         //SubCommands::Init {} => init(client).await,
         //SubCommands::Search {} => {}
         SubCommands::Licence {} => {
-            print_license(current_year);
-        }
-    }
-}
-
-fn print_license(current_year: i32) {
-    println!(
-        r#"Provides Mods/Texturepacks/Profiles that are not available on modrinth/curseforge and servers to list from for TeaClient
+            println!(
+                r#"Provides Mods/Texturepacks/Profiles that are not available on modrinth/curseforge and servers to list from for TeaClient
 Copyright (C) {}  TeaClient
 
 This program is free software: you can redistribute it and/or modify
@@ -67,8 +62,10 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>."#,
-        current_year
-    );
+                env!("CURRENT_YEAR")
+            );
+        }
+    }
 }
 
 // async fn init(client: Client) {
