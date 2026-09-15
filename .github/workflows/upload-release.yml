@@ -1,0 +1,33 @@
+name: Upload Release
+on:
+  workflow_dispatch:
+    inputs:
+      eval_id:
+        description: "Hydra evaluation ID (from the jobset)"
+        required: true
+        type: number
+      is_latest:
+        description: "Mark as latest release"
+        required: false
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  id-token: write
+  packages: write
+jobs:
+  release:
+    if: false # if: github.ref == 'refs/heads/dev'
+    runs-on: ubuntu-24.04
+    environment: releases
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: NixOS/nix-installer-action@62c1943b776c509394b550f3f983adc14e9212d6 # v1.0.0
+        with:
+          extra-conf: |
+            experimental-features = nix-command flakes
+      - uses: Mic92/hestia-beta # v4.0.0-beta.3
+      - name: Upload Release
+        run: exit 1
