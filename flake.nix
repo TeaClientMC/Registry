@@ -2,6 +2,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    bundlers = {
+      url = "github:NixOS/bundlers";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -9,8 +13,14 @@
   };
 
   outputs =
-    inputs@{ nixpkgs, flake-parts, ... }:
+    inputs@{
+      self,
+      nixpkgs,
+      flake-parts,
+      ...
+    }:
     flake-parts.lib.mkFlake { inherit inputs; } {
+      imports = [ ./hydraJobs.nix ];
       systems = [
         "aarch64-darwin"
         "aarch64-linux"
@@ -35,6 +45,9 @@
           };
 
           packages.registry-cli = pkgs.callPackage ./package.nix { };
+          hydraJobs.registry-cli =
+            inputs.bundlers.bundlers.${system}.toArx pkgs.pkgsStatic.callPackage ./package.nix
+              { };
 
           devShells.default =
             with pkgs;
