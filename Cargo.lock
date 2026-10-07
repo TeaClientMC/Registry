@@ -1230,7 +1230,7 @@ dependencies = [
 [[package]]
 name = "progenitor"
 version = "0.15.0"
-source = "git+https://github.com/oxidecomputer/progenitor#07831be8c0ed6037235d1bcda87acb8534e98884"
+source = "git+https://github.com/oxidecomputer/progenitor#18777874e57e2db4300e3ced8fe05ec3dc325301"
 dependencies = [
  "progenitor-client",
  "progenitor-impl",
@@ -1240,7 +1240,7 @@ dependencies = [
 [[package]]
 name = "progenitor-client"
 version = "0.15.0"
-source = "git+https://github.com/oxidecomputer/progenitor#07831be8c0ed6037235d1bcda87acb8534e98884"
+source = "git+https://github.com/oxidecomputer/progenitor#18777874e57e2db4300e3ced8fe05ec3dc325301"
 dependencies = [
  "bytes",
  "futures-core",
@@ -1254,7 +1254,7 @@ dependencies = [
 [[package]]
 name = "progenitor-impl"
 version = "0.15.0"
-source = "git+https://github.com/oxidecomputer/progenitor#07831be8c0ed6037235d1bcda87acb8534e98884"
+source = "git+https://github.com/oxidecomputer/progenitor#18777874e57e2db4300e3ced8fe05ec3dc325301"
 dependencies = [
  "heck",
  "http",
@@ -1275,7 +1275,7 @@ dependencies = [
 [[package]]
 name = "progenitor-macro"
 version = "0.15.0"
-source = "git+https://github.com/oxidecomputer/progenitor#07831be8c0ed6037235d1bcda87acb8534e98884"
+source = "git+https://github.com/oxidecomputer/progenitor#18777874e57e2db4300e3ced8fe05ec3dc325301"
 dependencies = [
  "openapiv3",
  "proc-macro2",
@@ -2079,9 +2079,9 @@ checksum = "1f3ccbac311fea05f86f61904b462b55fb3df8837a366dfc601a0161d0532f20"
 
 [[package]]
 name = "tokio"
-version = "1.53.1"
+version = "1.53.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "202caea871b69668250d242070849eb495be178ed697a3e98aebce5bc81a0bed"
+checksum = "e95f91fcc7a621e8b030f6aa23c71fe9838ae2fb4d8118b75602a328f5144044"
 dependencies = [
  "bytes",
  "libc",
@@ -2346,9 +2346,9 @@ checksum = "06abde3611657adf66d383f00b093d7faecc7fa57071cce2578660c9f1010821"
 
 [[package]]
 name = "uuid"
-version = "1.26.1"
+version = "1.27.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2ef6dac1e96601b4fb3acccccff2139741fcb757cb9a36089bf5be91cfb285ce"
+checksum = "97277d36b9c3ace13e58fa6e753f8b0bbbf302a18dd193240d70f9e29681059a"
 dependencies = [
  "getrandom 0.4.3",
  "js-sys",
