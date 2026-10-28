@@ -222,7 +222,7 @@ dependencies = [
  "heck",
  "proc-macro2",
  "quote",
- "syn 3.0.8",
+ "syn 3.0.9",
 ]
 
 [[package]]
@@ -1206,7 +1206,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2bfe0f4c752e450fc2faf62654f1c134747922825d5b04ca717b8874f41a40c0"
 dependencies = [
  "proc-macro2",
- "syn 3.0.8",
+ "syn 3.0.9",
 ]
 
 [[package]]
@@ -1224,13 +1224,13 @@ version = "0.1.1"
 dependencies = [
  "inquire",
  "quote",
- "syn 3.0.8",
+ "syn 3.0.9",
 ]
 
 [[package]]
 name = "progenitor"
 version = "0.15.1"
-source = "git+https://github.com/oxidecomputer/progenitor#23accc9f63cf3a56ac697ba92ac3d176c940dbdb"
+source = "git+https://github.com/oxidecomputer/progenitor#af512986d0ca96984e550691ab9813c501e93f9c"
 dependencies = [
  "progenitor-client",
  "progenitor-impl",
@@ -1240,7 +1240,7 @@ dependencies = [
 [[package]]
 name = "progenitor-client"
 version = "0.15.1"
-source = "git+https://github.com/oxidecomputer/progenitor#23accc9f63cf3a56ac697ba92ac3d176c940dbdb"
+source = "git+https://github.com/oxidecomputer/progenitor#af512986d0ca96984e550691ab9813c501e93f9c"
 dependencies = [
  "bytes",
  "futures-core",
@@ -1254,7 +1254,7 @@ dependencies = [
 [[package]]
 name = "progenitor-impl"
 version = "0.15.1"
-source = "git+https://github.com/oxidecomputer/progenitor#23accc9f63cf3a56ac697ba92ac3d176c940dbdb"
+source = "git+https://github.com/oxidecomputer/progenitor#af512986d0ca96984e550691ab9813c501e93f9c"
 dependencies = [
  "heck",
  "http",
@@ -1266,7 +1266,7 @@ dependencies = [
  "schemars",
  "serde",
  "serde_json",
- "syn 3.0.8",
+ "syn 3.0.9",
  "thiserror",
  "typify",
  "unicode-ident",
@@ -1275,7 +1275,7 @@ dependencies = [
 [[package]]
 name = "progenitor-macro"
 version = "0.15.1"
-source = "git+https://github.com/oxidecomputer/progenitor#23accc9f63cf3a56ac697ba92ac3d176c940dbdb"
+source = "git+https://github.com/oxidecomputer/progenitor#af512986d0ca96984e550691ab9813c501e93f9c"
 dependencies = [
  "openapiv3",
  "proc-macro2",
@@ -1286,7 +1286,7 @@ dependencies = [
  "serde_json",
  "serde_tokenstream",
  "serde_yaml",
- "syn 3.0.8",
+ "syn 3.0.9",
 ]
 
 [[package]]
@@ -1782,7 +1782,7 @@ checksum = "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 3.0.8",
+ "syn 3.0.9",
 ]
 
 [[package]]
@@ -1827,7 +1827,7 @@ dependencies = [
  "proc-macro2",
  "quote",
  "serde",
- "syn 3.0.8",
+ "syn 3.0.9",
 ]
 
 [[package]]
@@ -1961,9 +1961,9 @@ dependencies = [
 
 [[package]]
 name = "syn"
-version = "3.0.8"
+version = "3.0.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "01016da373cd8f7ef12624f796309f5c31ba8d646dd08856c02cd741d823c622"
+checksum = "d78c8dee4c7bf0e14673097256fed6142ce9d3b85a408189d07482442145823b"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2019,7 +2019,7 @@ dependencies = [
  "progenitor",
  "serde",
  "serde_json",
- "syn 3.0.8",
+ "syn 3.0.9",
  "tokio",
 ]
 
@@ -2079,9 +2079,9 @@ checksum = "1f3ccbac311fea05f86f61904b462b55fb3df8837a366dfc601a0161d0532f20"
 
 [[package]]
 name = "tokio"
-version = "1.53.2"
+version = "1.54.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e95f91fcc7a621e8b030f6aa23c71fe9838ae2fb4d8118b75602a328f5144044"
+checksum = "b52fd3255258d26fac7264ab5a76b53c13367136dc011d3d6ad4f8ed070396a3"
 dependencies = [
  "bytes",
  "libc",
@@ -2262,7 +2262,7 @@ dependencies = [
  "semver",
  "serde",
  "serde_json",
- "syn 3.0.8",
+ "syn 3.0.9",
  "thiserror",
  "unicode-ident",
 ]
@@ -2280,7 +2280,7 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_tokenstream",
- "syn 3.0.8",
+ "syn 3.0.9",
  "typify-impl",
 ]
 
@@ -2346,9 +2346,9 @@ checksum = "06abde3611657adf66d383f00b093d7faecc7fa57071cce2578660c9f1010821"
 
 [[package]]
 name = "uuid"
-version = "1.28.0"
+version = "1.29.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7cc1186384beb7dd8eedea376413fd654937285ea6c9cfbb928dc3043ea4b606"
+checksum = "4a0e2d11620c50695fe12bbbfde96b3477fe606e7284c22d505c12ce51214514"
 dependencies = [
  "getrandom 0.4.3",
  "js-sys",
@@ -2830,7 +2830,7 @@ dependencies = [
  "reqwest",
  "serde",
  "serde_json",
- "syn 3.0.8",
+ "syn 3.0.9",
  "typify",
 ]
 
